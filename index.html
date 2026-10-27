@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Université Gaston Berger de Saint-Louis | UGB - Sénégal</title>
+    <meta name="description" content="Site officiel de l'Université Gaston Berger de Saint-Louis (UGB) - L'excellence au service du développement. Formations, Recherche, Admissions et Vie Universitaire.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/ugb_logo.png">
+    
+    <!-- Google Font: Outfit (Font officielle de la maquette) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="site-header" id="header">
+        <div class="header-container">
+            <a href="#" class="brand-link" aria-label="Accueil Université Gaston Berger">
+                <img src="images/ugb_logo.png" alt="Logo UGB" class="brand-logo">
+                <div class="brand-info">
+                    <span class="brand-title">Université Gaston Berger</span>
+                    <span class="brand-location">SAINT-LOUIS DU SÉNÉGAL</span>
+                </div>
+            </a>
+
+            <!-- Nav Links according to Mockup -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="#apropos" class="nav-item">À propos</a></li>
+                    <li><a href="#etudier" class="nav-item">Étudier à l'UGB</a></li>
+                    <li><a href="#recherche" class="nav-item">Recherche</a></li>
+                    <li><a href="#cooperation" class="nav-item">Coopération</a></li>
+                    <li><a href="#numerique" class="nav-item">UGB Numérique</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <button class="search-btn" id="searchToggle" aria-label="Recherche">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Menu Mobile">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEARCH BAR OVERLAY -->
+    <div class="search-drawer" id="searchDrawer">
+        <div class="search-drawer-inner">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Rechercher une formation, UFR, publication, événement...">
+            <button class="close-search-btn" id="closeSearchBtn">&times;</button>
+        </div>
+    </div>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero_campus.png" alt="Campus UGB de Saint-Louis" class="hero-img">
+            <div class="hero-gradient"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text-wrap">
+                <h1 class="hero-heading">
+                    L'excellence au service<br>
+                    du developpement
+                </h1>
+                <p class="hero-subtext">
+                    Une université sénégalaise de référence, tournée vers la recherche, l'innovation pédagogique et l'insertion professionnelle.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#etudier" class="btn btn-gold">Découvrir nos formations</a>
+                    <a href="#admissions" class="btn btn-outline" id="openAdmissionModal">Admission 2026</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Stats Strip at bottom of Hero -->
+        <div class="hero-stats-strip">
+            <div class="stats-strip-container">
+                <div class="strip-item">
+                    <span class="strip-num">9</span>
+                    <span class="strip-label">UFR</span>
+                </div>
+                <div class="strip-divider"></div>
+                <div class="strip-item">
+                    <span class="strip-num">4</span>
+                    <span class="strip-label">Instituts</span>
+                </div>
+                <div class="strip-divider"></div>
+                <div class="strip-item">
+                    <span class="strip-num">+16 518</span>
+                    <span class="strip-label">Étudiants</span>
+                </div>
+                <div class="strip-divider"></div>
+                <div class="strip-item">
+                    <span class="strip-num">+29</span>
+                    <span class="strip-label">Nationalités</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= NOTRE BOUSSOLE ================= -->
+    <section class="boussole-section" id="boussole">
+        <div class="section-container">
+            <div class="section-meta">
+                <span class="section-tag">NOTRE BOUSSOLE</span>
+                <h2 class="section-title">Mission, vision & valeurs</h2>
+            </div>
+
+            <div class="boussole-grid">
+                <!-- Card 1 -->
+                <div class="boussole-card">
+                    <div class="card-dot dot-green"></div>
+                    <h3 class="card-title">Notre Mission</h3>
+                    <p class="card-desc">Offrir une éducation de qualité, encourager la recherche et l'innovation.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="boussole-card">
+                    <div class="card-dot dot-blue"></div>
+                    <h3 class="card-title">Notre Vision</h3>
+                    <p class="card-desc">Une excellence académique adaptée aux besoins du marché du travail.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="boussole-card">
+                    <div class="card-dot dot-dark"></div>
+                    <h3 class="card-title">Nos Valeurs</h3>
+                    <p class="card-desc">Excellence, intégrité, collaboration, responsabilité sociale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= L'UGB EN CHIFFRES ================= -->
+    <section class="chiffres-section" id="chiffres">
+        <div class="section-container">
+            <div class="chiffres-header">
+                <span class="chiffres-tag">L'UGB EN CHIFFRES</span>
+            </div>
+
+            <div class="chiffres-grid">
+                <div class="chiffre-col">
+                    <span class="chiffre-val" data-val="9">9</span>
+                    <span class="chiffre-name">UFR</span>
+                </div>
+                <div class="chiffre-col">
+                    <span class="chiffre-val" data-val="4">4</span>
+                    <span class="chiffre-name">INSTITUTS</span>
+                </div>
+                <div class="chiffre-col">
+                    <span class="chiffre-val" data-val="558">558</span>
+                    <span class="chiffre-name">PATS</span>
+                </div>
+                <div class="chiffre-col">
+                    <span class="chiffre-val" data-val="16518">+16 518</span>
+                    <span class="chiffre-name">ÉTUDIANTS</span>
+                </div>
+                <div class="chiffre-col">
+                    <span class="chiffre-val" data-val="29">+29</span>
+                    <span class="chiffre-name">NATIONALITÉS</span>
+                </div>
+                <div class="chiffre-col">
+                    <span class="chiffre-val" data-val="20000">+20 000</span>
+                    <span class="chiffre-name">DIPLÔMÉS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LE MOT DU RECTEUR ================= -->
+    <section class="recteur-section" id="apropos">
+        <div class="section-container">
+            <div class="recteur-grid">
+                <div class="recteur-image-col">
+                    <div class="recteur-img-frame">
+                        <img src="images/recteur_magatte_ndiaye.png" alt="Pr Magatte Ndiaye, Recteur UGB" class="recteur-photo">
+                        <div class="recteur-badge-bottom">
+                            <span class="recteur-badge-title">Pr Magatte NDIAYE</span>
+                            <span class="recteur-badge-sub">Recteur UGB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recteur-text-col">
+                    <span class="section-tag">LE MOT DU RECTEUR</span>
+                    <h2 class="recteur-name">Pr Magatte Ndiaye</h2>
+                    <span class="recteur-subtitle">Recteur de l'Université Gaston Berger</span>
+                    
+                    <blockquote class="recteur-quote">
+                        « L'excellence au service du développement est notre credo depuis trente-quatre ans. L'UGB continue de former des ressources humaines reconnues à travers le monde, tout en explorant nos partenariats et de nouvelles sources de financement pour accompagner sa croissance. »
+                    </blockquote>
+
+                    <a href="#apropos" class="btn btn-outline-dark">
+                        <span>Voir le message complet</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= UNITÉS DE FORMATION ET DE RECHERCHE ================= -->
+    <section class="ufr-section" id="etudier">
+        <div class="section-container">
+            <div class="section-meta">
+                <span class="section-tag">ÉTUDIER À L'UGB</span>
+                <h2 class="section-title">Unités de Formation et de Recherche</h2>
+                <p class="section-desc">9 UFR réparties en sciences, lettres, santé, droit, gestion et technologies.</p>
+            </div>
+
+            <div class="ufr-cards-grid">
+                <!-- Card 1 -->
+                <article class="ufr-item-card">
+                    <div class="ufr-item-thumb">
+                        <img src="images/ufr_sante.png" alt="Sciences de la Santé 2S">
+                        <span class="ufr-chip">UFR</span>
+                    </div>
+                    <div class="ufr-item-body">
+                        <h3 class="ufr-item-title">Sciences de la Santé (2S)</h3>
+                        <p class="ufr-item-text">Renforcer le personnel des hôpitaux et centres de santé.</p>
+                        <a href="#admissions" class="ufr-item-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="ufr-item-card">
+                    <div class="ufr-item-thumb">
+                        <img src="images/ufr_seg.png" alt="Sciences Économiques SEG">
+                        <span class="ufr-chip">UFR</span>
+                    </div>
+                    <div class="ufr-item-body">
+                        <h3 class="ufr-item-title">Sciences Économiques (SEG)</h3>
+                        <p class="ufr-item-text">Préparer aux métiers de l'économie et de la gestion.</p>
+                        <a href="#admissions" class="ufr-item-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="ufr-item-card">
+                    <div class="ufr-item-thumb">
+                        <img src="images/institut_isem.png" alt="Institut Supérieur d'Économie ISEM">
+                        <span class="ufr-chip">UFR</span>
+                    </div>
+                    <div class="ufr-item-body">
+                        <h3 class="ufr-item-title">Institut Sup. Économie (ISEM)</h3>
+                        <p class="ufr-item-text">Formation de haut niveau en économie et management.</p>
+                        <a href="#admissions" class="ufr-item-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ACTUALITÉS ================= -->
+    <section class="news-section" id="actualites">
+        <div class="section-container">
+            <div class="news-header-row">
+                <div>
+                    <span class="section-tag">ACTUALITÉS</span>
+                    <h2 class="section-title">Les dernières nouvelles de l'UGB</h2>
+                </div>
+                <a href="#actualites" class="btn btn-dark-pill">Toutes les actualités</a>
+            </div>
+
+            <!-- Featured Big Article -->
+            <article class="featured-news-card">
+                <div class="featured-thumb">
+                    <img src="images/actualite_graduation.png" alt="Première Cérémonie de Graduation des diplômés 2023 - 2024">
+                </div>
+                <div class="featured-info">
+                    <div class="featured-tags">
+                        <span class="tag-pill tag-primary">À LA UNE</span>
+                        <span class="tag-pill tag-secondary">GRADUATION</span>
+                    </div>
+                    <h3 class="featured-title">Première Cérémonie de Graduation des diplômés 2023 - 2024</h3>
+                    <p class="featured-summary">
+                        Licence, Master et Doctorat : l'UGB a célébré pour la première fois ses diplômés lors d'une grande cérémonie institutionnelle, en présence du Recteur et des autorités.
+                    </p>
+                    <a href="#actualites" class="read-more-link">Lire l'article <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- 3 Small News Cards -->
+            <div class="mini-news-grid">
+                <!-- Mini 1 -->
+                <article class="mini-news-card">
+                    <div class="mini-thumb">
+                        <img src="images/actualite_ipsl_total.png" alt="Coop. IPSL - Total Énergies">
+                        <span class="mini-date-badge">28 JUIL</span>
+                    </div>
+                    <div class="mini-body">
+                        <h4 class="mini-title">Coop. IPSL - Total Énergies</h4>
+                        <p class="mini-text">Signature d'une convention de partenariat académique.</p>
+                    </div>
+                </article>
+
+                <!-- Mini 2 -->
+                <article class="mini-news-card">
+                    <div class="mini-thumb">
+                        <img src="images/actualite_campus_numerique.png" alt="Vie de campus & numérique">
+                        <span class="mini-date-badge">03 JUIN</span>
+                    </div>
+                    <div class="mini-body">
+                        <h4 class="mini-title">Vie de campus & numérique</h4>
+                        <p class="mini-text">Étudiants et enseignants échangent sur le campus.</p>
+                    </div>
+                </article>
+
+                <!-- Mini 3 -->
+                <article class="mini-news-card">
+                    <div class="mini-thumb">
+                        <img src="images/actualite_culture_isem.png" alt="Journée culturelle à l'ISEM">
+                        <span class="mini-date-badge">04 JUIN</span>
+                    </div>
+                    <div class="mini-body">
+                        <h4 class="mini-title">Journée culturelle à l'ISEM</h4>
+                        <p class="mini-text">Diversité, dialogue et fierté panafricaine.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= VIE UNIVERSITAIRE & GALERIE ================= -->
+    <section class="vie-section" id="vie-universitaire">
+        <div class="section-container">
+            <div class="section-meta">
+                <span class="section-tag">VIE UNIVERSITAIRE</span>
+                <h2 class="section-title">Cérémonies de graduation & vie de campus</h2>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="campus-gallery-grid">
+                <div class="gallery-photo"><img src="images/galerie_1.png" alt="Vie de campus UGB 1"></div>
+                <div class="gallery-photo"><img src="images/galerie_2.png" alt="Vie de campus UGB 2"></div>
+                <div class="gallery-photo"><img src="images/galerie_3.png" alt="Vie de campus UGB 3"></div>
+                <div class="gallery-photo"><img src="images/galerie_4.png" alt="Vie de campus UGB 4"></div>
+            </div>
+
+            <div class="gallery-caption-bar">
+                <span>Promotion 2023-2024 — la joie de la réussite</span>
+            </div>
+
+            <!-- Community CTA Box -->
+            <div class="community-cta-box">
+                <div class="cta-img-col">
+                    <img src="images/cta_communaute.png" alt="Alumni UGB" class="cta-avatar">
+                </div>
+                <div class="cta-text-col">
+                    <h3 class="cta-box-title">Rejoignez une communauté de +20 000 diplômés</h3>
+                    <p class="cta-box-desc">Ils sont devenus ministres, chercheurs, entrepreneurs, magistrats...</p>
+                </div>
+                <div class="cta-btn-col">
+                    <a href="#temoignages" class="btn btn-gold">Découvrir leurs parcours</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TÉMOIGNAGES ================= -->
+    <section class="temoignages-section" id="temoignages">
+        <div class="section-container">
+            <div class="section-meta text-center">
+                <span class="section-tag">TÉMOIGNAGES</span>
+                <h2 class="section-title">Ils sont passés par l'UGB</h2>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <img src="images/temoignage_mabouba_diagne.png" alt="Dr Mabouba Diagne">
+                </div>
+                <blockquote class="testimonial-text">
+                    « L'UGB a été la pierre angulaire de mon parcours, façonnant la personne que je suis aujourd'hui. »
+                </blockquote>
+                <div class="testimonial-author">
+                    <strong class="author-name">Dr Mabouba Diagne</strong>
+                    <span class="author-role">Vice-Président de la BIDC, PCA de l'UGB — Spécialiste Finance</span>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-top-container">
+            <div class="footer-brand-side">
+                <div class="footer-brand-head">
+                    <img src="images/ugb_logo.png" alt="Logo UGB" class="footer-logo">
+                    <div>
+                        <h4 class="footer-brand-title">Université Gaston Berger</h4>
+                        <span class="footer-brand-sub">Saint-Louis du Sénégal</span>
+                    </div>
+                </div>
+                <div class="footer-address">
+                    <p>BP 234, Saint-Louis, Sénégal (campus de Sanar)</p>
+                    <p>rectorat@ugb.edu.sn • www.ugb.edu.sn</p>
+                </div>
+            </div>
+
+            <div class="footer-campus-card">
+                <div class="campus-card-text">
+                    <strong>Campus de Sanar</strong>
+                    <span>Route de Ngallèle, Saint-Louis</span>
+                </div>
+                <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-gold-sm">Voir sur Google Maps</a>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-links-container">
+            <div class="footer-col">
+                <h5 class="col-title">À propos</h5>
+                <ul class="col-list">
+                    <li><a href="#apropos">Historique</a></li>
+                    <li><a href="#apropos">Mot du recteur</a></li>
+                    <li><a href="#apropos">Conseil d'administration</a></li>
+                    <li><a href="#apropos">Cabinet du Recteur</a></li>
+                    <li><a href="#apropos">Secrétariat Général</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 class="col-title">Étudier à l'UGB</h5>
+                <ul class="col-list">
+                    <li><a href="#etudier">Formations</a></li>
+                    <li><a href="#admissions">Admission</a></li>
+                    <li><a href="#admissions">Préinscription</a></li>
+                    <li><a href="#vie-universitaire">Vie étudiante</a></li>
+                    <li><a href="#etudier">UFR / Instituts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 class="col-title">Recherche & Coopération</h5>
+                <ul class="col-list">
+                    <li><a href="#recherche">Écoles Doctorales</a></li>
+                    <li><a href="#recherche">Publications</a></li>
+                    <li><a href="#cooperation">Partenariats</a></li>
+                    <li><a href="#vie-universitaire">Insertion des diplômés</a></li>
+                    <li><a href="#numerique">UGB Numérique</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 class="col-title">Liens utiles</h5>
+                <ul class="col-list">
+                    <li><a href="#">Bibliothèque Universitaire</a></li>
+                    <li><a href="#">Portail des étudiants</a></li>
+                    <li><a href="#">Université Cheikh Anta Diop</a></li>
+                    <li><a href="#">Fondation UGB</a></li>
+                    <li><a href="#actualites">Actualités & événements</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom-container">
+            <div class="footer-social-wrap">
+                <span class="social-label">Suivez-nous :</span>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; Université Gaston Berger 2026. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL ADMISSION 2026 -->
+    <div class="modal-backdrop" id="admissionModal">
+        <div class="modal-box">
+            <button class="modal-close-btn" id="closeModal">&times;</button>
+            <div class="modal-header">
+                <h3>Admission 2026-2027</h3>
+                <p>Déposez votre candidature pour l'admission à l'Université Gaston Berger.</p>
+            </div>
+            <form id="admissionForm" class="modal-form">
+                <div class="form-group">
+                    <label for="candNom">Nom complet :</label>
+                    <input type="text" id="candNom" required placeholder="Ex: Khadim Diouf">
+                </div>
+                <div class="form-group">
+                    <label for="candEmail">Email :</label>
+                    <input type="email" id="candEmail" required placeholder="nom@exemple.sn">
+                </div>
+                <div class="form-group">
+                    <label for="candUfr">UFR ou Institut ciblé :</label>
+                    <select id="candUfr" required>
+                        <option value="">Sélectionnez votre choix</option>
+                        <option value="2S">Sciences de la Santé (2S)</option>
+                        <option value="SEG">Sciences Économiques (SEG)</option>
+                        <option value="ISEM">Institut Supérieur d'Économie (ISEM)</option>
+                        <option value="SAT">Sciences Appliquées & Tech (SAT)</option>
+                        <option value="SJP">Sciences Juridiques & Politiques (SJP)</option>
+                        <option value="LSH">Lettres & Sciences Humaines (LSH)</option>
+                        <option value="IPSL">Institut Polytechnique (IPSL)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-gold btn-block">Soumettre ma candidature</button>
+                <div id="modalSuccess" class="modal-success-msg">Candidature enregistrée avec succès ! Nos équipes vous contacteront.</div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

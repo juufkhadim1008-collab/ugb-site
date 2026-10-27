@@ -1,0 +1,5 @@
+*.ai
+*.pdf
+*.raw
+server.js
+.vercel
